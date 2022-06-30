@@ -1,0 +1,45 @@
+/* Cahya */
+.divider-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #8392a5;
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;
+  letter-spacing: 0.5px;
+  margin: 15px 0;
+}
+
+.divider-text::before,
+.divider-text::after {
+  /* box-sizing: border-box; */
+  content: "";
+  display: block;
+  flex: 1;
+  height: 1px;
+  background-color: #e5e9f2;
+}
+
+.divider-text::after {
+  margin-left: 10px;
+}
+
+.divider-text::before {
+  margin-right: 10px;
+}
+
+table.detail-view th {
+  width: 30%;
+  padding: 0.6rem;
+}
+
+table.detail-view td {
+  width: 70%;
+  padding: 0.6rem;
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+/* End Cahya */
