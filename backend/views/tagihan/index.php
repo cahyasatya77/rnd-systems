@@ -70,12 +70,12 @@ $list_produk = ArrayHelper::map($produk, 'id', 'nama_produk');
         <div class="card-header">
             <div class="card-title">Tagihan</div>
         </div>
-        <div class="card-body p-0">
+        <div class="card-body table-responsive p-0">
             <?= GridView::widget([
                 'dataProvider' => $dataProvider,
                 // 'filterModel' => $searchModel,
                 'tableOptions' => [
-                    'class' => 'table table-striped table-responsive',
+                    'class' => 'table table-striped',
                 ],
                 'layout' => '{items}{pager}',
                 'columns' => [

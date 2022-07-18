@@ -34,7 +34,6 @@ $this->params['breadcrumbs'][] = $this->title;
                             'model' => $model,
                             'attributes' => [
                                 'id_transaksi',
-                                'bentuk_sediaan',
                                 'keterangan',
                             ],
                         ]);?>

@@ -316,7 +316,7 @@ class RegistrasikomitmenController extends Controller
 
         // Data choice for the ActiveForm
         $connection = Yii::$app->db_pm;
-        $sql_produk = "SELECT id, nama_produk FROM tbl_produk WHERE status = 'Diproduksi'";
+        $sql_produk = "SELECT id, nama_produk FROM tbl_produk WHERE status = 'Diproduksi' OR status = 'Belum-Diproduksi'";
         $produk = $connection->createCommand($sql_produk)->queryAll();
         $pic = User::find()
                 ->where(['NOT IN', 'level_access', ['administrator', 'manager']])

@@ -57,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'buttons' => [
                             'justif' => function ($url, $model) {
                                 $url = Url::to(['approve', 'id' => $model->id]);
-                                return Html::a('approve', $url, ['class' => 'btn btn-success btn-xs']);
+                                return Html::a('detail', $url, ['class' => 'btn btn-success btn-xs']);
                             }
                         ],
                     ],
